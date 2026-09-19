@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://anil-x-4j4fxx.v2.appdeploy.ai/sitemap.xml

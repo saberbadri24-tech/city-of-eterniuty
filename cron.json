@@ -1,0 +1,20 @@
+[
+  {
+    "name": "autonomous-watchdog",
+    "cron": "*/5 * * * *",
+    "handler": "autonomousWatchdog",
+    "timezone": "Asia/Tehran"
+  },
+  {
+    "name": "continuous-benchmark-review",
+    "cron": "0 * * * *",
+    "handler": "continuousBenchmarkReview",
+    "timezone": "Asia/Tehran"
+  },
+  {
+    "name": "daily-improvement-review",
+    "cron": "0 3 * * *",
+    "handler": "dailyImprovementReview",
+    "timezone": "Asia/Tehran"
+  }
+]

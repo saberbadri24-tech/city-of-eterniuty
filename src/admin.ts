@@ -1,4 +1,13 @@
-import { api } from '@appdeploy/client';
+const api = {
+  async post(url: string, data?: unknown): Promise<{ data: any }> {
+    const response = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data ?? {}) });
+    const text = await response.text();
+    let parsed: unknown = {};
+    try { parsed = text ? JSON.parse(text) : {}; } catch { parsed = { text }; }
+    if (!response.ok) throw new Error((parsed as { message?: string }).message || `HTTP ${response.status}`);
+    return { data: parsed };
+  }
+};
 
 const OWNER_EMAIL = 'saberbadri24@gmail.com';
 type ChatItem = { role: 'user' | 'assistant'; content: string };

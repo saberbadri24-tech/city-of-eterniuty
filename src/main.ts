@@ -1,5 +1,5 @@
-const REPO_BASE = 'https://saberbadri24-tech.github.io/city-of-eternity/';
-const RAW_BASE = 'https://raw.githubusercontent.com/saberbadri24-tech/city-of-eternity/main/';
+const REPO_BASE = 'https://saberbadri24-tech.github.io/city-of-eterniuty/';
+const RAW_BASE = 'https://raw.githubusercontent.com/saberbadri24-tech/city-of-eterniuty/main/';
 
 async function boot() {
   const root = document.querySelector<HTMLDivElement>('#app');
@@ -16,7 +16,10 @@ async function boot() {
   const parsed = new DOMParser().parseFromString(html, 'text/html');
   document.documentElement.lang = parsed.documentElement.lang || 'fa';
   document.documentElement.dir = parsed.documentElement.dir || 'rtl';
-  document.head.innerHTML = parsed.head.innerHTML.replaceAll('href="style.css"', `href="${RAW_BASE}style.css"`).replaceAll('href="manifest.webmanifest"', `href="${REPO_BASE}manifest.webmanifest"`).replaceAll('href="icon.svg"', `href="${REPO_BASE}icon.svg"`);
+  document.head.innerHTML = parsed.head.innerHTML
+    .replaceAll('href="style.css"', `href="${RAW_BASE}style.css"`)
+    .replaceAll('href="manifest.webmanifest"', `href="${REPO_BASE}manifest.webmanifest"`)
+    .replaceAll('href="icon.svg"', `href="${REPO_BASE}icon.svg"`);
   const base = document.createElement('base');
   base.href = REPO_BASE;
   document.head.prepend(base);

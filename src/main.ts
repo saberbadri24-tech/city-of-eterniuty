@@ -1,5 +1,5 @@
 const REPO_BASE = 'https://saberbadri24-tech.github.io/city-of-eterniuty/';
-const RAW_BASE = 'https://raw.githubusercontent.com/saberbadri24-tech/city-of-eterniuty/main/';
+const RAW_BASE = 'https://raw.githubusercontent.com/saberbadri24-tech/city-of-eternity/main/';
 
 async function boot() {
   const root = document.querySelector<HTMLDivElement>('#app');

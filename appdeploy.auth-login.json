@@ -1,0 +1,14 @@
+{
+  "methods": ["google", "apple", "x"],
+  "headline": "Enter ANIL X",
+  "subtitle": "Your private workspace for projects, requests and orders.",
+  "style": {
+    "mode": "dark",
+    "accentColor": "#d7b56d",
+    "backgroundColor": "#080a0d",
+    "panelColor": "#11151b",
+    "textColor": "#f4f1e8",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "borderRadius": 16
+  }
+}

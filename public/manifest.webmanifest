@@ -1,0 +1,16 @@
+{
+  "name": "ANIL X — Business Operating System",
+  "short_name": "ANIL X",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#070503",
+  "theme_color": "#070503",
+  "description": "ANIL X digital business operating system for building, creating, fixing and growing online.",
+  "lang": "fa",
+  "dir": "rtl",
+  "categories": ["business", "productivity", "design"],
+  "icons": [
+    { "src": "./icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

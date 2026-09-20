@@ -27,9 +27,6 @@ async function boot() {
     script.defer = true;
     document.body.appendChild(script);
   });
-  const sw = document.createElement('script');
-  sw.textContent = "if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});";
-  document.body.appendChild(sw);
 }
 
 boot().catch((error) => {

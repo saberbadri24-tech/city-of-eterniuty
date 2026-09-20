@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const MANIFEST='https://saberbadri24-tech.github.io/city-of-eterniuty/tonconnect-manifest.json';
+const MANIFEST='https://saberbadri24-tech.github.io/city-of-eterniuty/ui/tonconnect-manifest.json';
 const CDN='https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js';
 function init(){
  const button=document.getElementById('ton-connect-fallback');
